@@ -1,7 +1,7 @@
-#name: kalebhelton
-#started:  07/19/2024
-#ended:
-#blackjack
+# name: kalebhelton
+# started:  07/19/2024
+# ended:
+# blackjack
 
 import random
 import over21
@@ -109,7 +109,7 @@ while True:
 
 dealer_cards = [dealer_card1, dealer_card2]
 dealer_score = sum(card_value(card) for card in dealer_cards)
-while dealer_score < 17 and player_score != 21 and over21.greater_than_21(player_score) == False and greater_than_21(dealer_score) == False:
+while dealer_score < 17 and player_score != 21 and over21.greater_than_21(player_score) == False and over21.greater_than_21(dealer_score) == False:
     new_card = deck.pop()
     dealer_cards.append(new_card)
     dealer_score += card_value(new_card)
